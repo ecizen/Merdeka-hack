@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <div>
       <Container>
-        <section className="min-h-screen lg:flex-row flex flex-col lg:items-center lg:justify-between justify-start lg:px-12 md:px-8 sm:px-6 px-6 py-8">
+        <section className=" bg-white min-h-screen lg:flex-row flex flex-col lg:items-center lg:justify-between justify-start lg:px-12 md:px-8 sm:px-6 px-6 py-8">
         <motion.div
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
@@ -62,5 +62,7 @@ const Hero = () => {
     </div>
   );
 };
+
+
 
 export default Hero;

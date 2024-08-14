@@ -10,7 +10,7 @@ export default function Home() {
 
     
   return (
-    <main className=" overflow-x-hidden">
+    <main className="  bg-white overflow-x-hidden">
       <section id="hero" className="hero">
         <Hero />
       </section>

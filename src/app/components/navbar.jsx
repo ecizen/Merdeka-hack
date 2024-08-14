@@ -87,22 +87,9 @@ const Navbar = () => {
         </nav>
       </Container>
       <Container>
-        <motion.div
+        <div
           className={`lg:hidden w-full ${showMenu ? 'px-4 py-2' : 'p-0'} bg-red-600  block transition-all ease-in-out duration-300`}
-          variants={{
-            hidden: {
-              height: 0,
-              opacity: 0,
-            },
-            visible: {
-              height: 'auto',
-              opacity: 1,
-              transition: {
-                duration: 0.5,
-                ease: 'easeInOut',
-              },
-            },
-          }}
+          
           initial="hidden"
           animate={showMenu ? 'visible' : 'hidden'}
         >
@@ -118,7 +105,7 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-        </motion.div>
+        </div>
       </Container>
     </motion.div>
   );
